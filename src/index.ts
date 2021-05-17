@@ -113,7 +113,7 @@ export default class Animator {
   private stopEvents: CallbackEvent[] = [];
 
   constructor({ fps, pauseOnHidden = true, resumeOnShown = true }: AnimatorParams = {}) {
-    this.targetFPS = fps ? fps : MAX_FPS;
+    this.targetFPS = fps ? Math.min(fps, MAX_FPS) : MAX_FPS;
     this.pauseOnHidden = pauseOnHidden;
     this.resumeOnShown = resumeOnShown;
     this.ignoreTargetFPS = !fps;
@@ -199,6 +199,14 @@ export default class Animator {
    */
   setTargetFPS(fps: number) {
     this.targetFPS = Math.min(fps, MAX_FPS);
+    this.ignoreTargetFPS = false;
+  }
+
+  /**
+   * Set to ignore the target FPS and perform purely on animation frame requests.
+   */
+  setIgnoreTargetFPS() {
+    this.ignoreTargetFPS = true;
   }
 
   /**

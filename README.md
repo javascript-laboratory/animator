@@ -30,21 +30,22 @@ A class for managing and controlling browser animations.
 
 ## Methods
 
-| Method             | Parameters                          | Description                                                          | Returns                   |
-| ------------------ | ----------------------------------- | -------------------------------------------------------------------- | ------------------------- |
-| `getPerformingFPS` |                                     | Get the current performing frame rate for the animation.             | fps: `number`             |
-| `setTargetFPS`     | fps: `number`                       | Set a target frame rate for the animation.                           |
-| `setPauseOnHidden` | hidden: `boolean`                   | Set whether the animations to be paused when the page loses focus.   |
-| `setResumeOnShown` | shown: `boolean`                    | Set whether the animations to be resume when the page regains focus. |
-| `start`            |                                     | Start the animation loop.                                            |
-| `pause`            |                                     | Pause the animation loop.                                            |
-| `resume`           |                                     | Resume the animation loop.                                           |
-| `stop`             |                                     | Stop the animation loop.                                             |
-| `add`              | handler: `(delta: number) => void)` | Subscribe a handler to the animation event loop.                     | unsubscribe: `() => void` |
-| `onStart`          | handler: `() => void`               | Subscribe a handler to the start events.                             | unsubscribe: `() => void` |
-| `onPause`          | handler: `() => void`               | Subscribe a handler to the pause events.                             | unsubscribe: `() => void` |
-| `onResume`         | handler: `() => void`               | Subscribe a handler to the resume events.                            | unsubscribe: `() => void` |
-| `onStop`           | handler: `() => void`               | Subscribe a handler to the stop events.                              | unsubscribe: `() => void` |
+| Method               | Parameters                          | Description                                                                  | Returns                   |
+| -------------------- | ----------------------------------- | ---------------------------------------------------------------------------- | ------------------------- |
+| `getPerformingFPS`   |                                     | Get the current performing frame rate for the animation.                     | fps: `number`             |
+| `setTargetFPS`       | fps: `number`                       | Set a target frame rate for the animation.                                   |
+| `setIgnoreTargetFPS` |                                     | Set to ignore the target FPS and perform purely on animation frame requests. |
+| `setPauseOnHidden`   | hidden: `boolean`                   | Set whether the animations to be paused when the page loses focus.           |
+| `setResumeOnShown`   | shown: `boolean`                    | Set whether the animations to be resume when the page regains focus.         |
+| `start`              |                                     | Start the animation loop.                                                    |
+| `pause`              |                                     | Pause the animation loop.                                                    |
+| `resume`             |                                     | Resume the animation loop.                                                   |
+| `stop`               |                                     | Stop the animation loop.                                                     |
+| `add`                | handler: `(delta: number) => void)` | Subscribe a handler to the animation event loop.                             | unsubscribe: `() => void` |
+| `onStart`            | handler: `() => void`               | Subscribe a handler to the start events.                                     | unsubscribe: `() => void` |
+| `onPause`            | handler: `() => void`               | Subscribe a handler to the pause events.                                     | unsubscribe: `() => void` |
+| `onResume`           | handler: `() => void`               | Subscribe a handler to the resume events.                                    | unsubscribe: `() => void` |
+| `onStop`             | handler: `() => void`               | Subscribe a handler to the stop events.                                      | unsubscribe: `() => void` |
 
 ## Contact
 
