@@ -4,7 +4,7 @@
   "description": "A class for managing and controlling browser animations.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp -R src/ dist",
     "test": "jest"
   },
   "devDependencies": {
