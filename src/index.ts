@@ -10,6 +10,7 @@ type AnimatorParams = { fps?: number; pauseOnHidden?: boolean; resumeOnShown?: b
 
 declare global {
   interface Window {
+    webkitRequestAnimationFrame: (callback: FrameRequestCallback) => number;
     mozRequestAnimationFrame: (callback: FrameRequestCallback) => number;
     oRequestAnimationFrame: (callback: FrameRequestCallback) => number;
     msRequestAnimationFrame: (callback: FrameRequestCallback) => number;
