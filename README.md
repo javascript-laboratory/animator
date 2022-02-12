@@ -1,6 +1,10 @@
 ![Last Commit][github-last-commit-image]
 [![Issues][issues-image]][issues-url]
 
+[github-last-commit-image]: https://img.shields.io/github/last-commit/javascript-laboratory/animator?style=for-the-badge
+[issues-image]: https://img.shields.io/github/issues/javascript-laboratory/animator.svg?style=for-the-badge
+[issues-url]: https://github.com/javascript-laboratory/animator/issues
+
 # Animator
 
 A class for managing and controlling browser animations.
@@ -50,7 +54,3 @@ A class for managing and controlling browser animations.
 ## Contact
 
 Wai Chung Wong - [Github](https://github.com/WaiChungWong) | [johnwongwwc@gmail.com](mailto:johnwongwwc@gmail.com)
-
-[github-last-commit-image]: https://img.shields.io/github/last-commit/javascript-laboratory/animator?style=for-the-badge
-[issues-image]: https://img.shields.io/github/issues/javascript-laboratory/animator.svg?style=for-the-badge
-[issues-url]: https://github.com/javascript-laboratory/animator/issues
